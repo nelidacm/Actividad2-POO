@@ -11,7 +11,7 @@ public class Main {
 				
 		auto1.llenarTanque();
 		auto1.escender();
-		auto1.mostrarDatos();
+		auto1.toString();
 		
 		//auto2
 		Automovil auto2 = new Automovil();
@@ -22,7 +22,7 @@ public class Main {
 				
 		auto1.llenarTanque();
 		auto1.escender();
-		auto1.mostrarDatos();
+		auto1.toString();
 		
 	}
 

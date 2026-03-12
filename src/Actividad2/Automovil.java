@@ -42,23 +42,23 @@ public class Automovil {
 
 		} else {
 			System.err.println("NO PUEDE AVANZAR");
-
 		}
-
-	}
-
-	public String mostrarDatos() {
-		return "Automovil [marca=" + marca + ", modelo=" + modelo + ", nombreDuenio=" + nombreDueno + ", estaEncendido="
-				+ estaEncendido + ", estaAbierto=" + estaAbierto + ", estaVacio=" + estaVacio + ", kilometraje="
-				+ kilometraje + ", nivelCombustible=" + nivelCombustible + "]";
 	}
 
 	public void abrirPuertas() {
 		if(estaEncendido == false) {
 			System.out.println("las puertas del auto se abrieron");
-			
+		}else {
+			System.out.println("las puertas del auto estan cerradas");
 		}
-
-	
 	}
+	public String toString() {
+		return "Automovil [marca=" + marca + ", modelo=" + modelo + ", nombreDueno=" + nombreDueno + ", estaEncendido="
+				+ estaEncendido + ", estaAbierto=" + estaAbierto + ", estaVacio=" + estaVacio + ", kilometraje="
+				+ kilometraje + ", nivelCombustible=" + nivelCombustible + "]";
+	}public void mostrarEstado() {
+		System.out.println(toString());
+	}
+
+
 }
